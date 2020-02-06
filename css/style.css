@@ -1,0 +1,259 @@
+*
+{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bebas Neue', cursive;
+}
+main
+{
+  background: url('../img/logo/logo1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  border-top: #ea3a15 solid 5px;
+}
+header
+{
+  display: grid;
+  grid-template-areas: '... nav';
+  grid-template-columns: 1fr 1fr;
+}
+.marca
+{
+  width: 200px;
+  height: 50px;
+  text-transform: uppercase;
+  background-color: #f13913;
+}
+.marca p 
+{
+  font-size: 33px;
+  font-weight: bold;
+  text-align: end;
+  line-height: 60px;
+  color: #fffafd;
+  padding-right: 20px;
+  letter-spacing: 1px;
+}
+nav
+{
+  width: 450px;
+  height: 70px;
+  grid-area: nav;
+}
+nav ul
+{
+  display: grid;
+  grid-auto-flow: column;
+}
+nav ul li
+{
+  list-style: none;
+}
+nav ul li a
+{
+  text-decoration: none;
+  line-height: 40px;
+  color: #ece7e4;
+}
+nav ul li a:hover
+{
+    color: #ce3f21;
+
+}
+#active
+{
+  color: #ce3f21;
+}
+main section
+{
+  margin-top: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section h1
+{
+  text-align: center;
+  color: #d5d5d5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 65px;
+  font-weight: lighter;
+}
+main section p
+{
+  text-align: center;
+  color: #e3e7e8;
+  font-size: 23px;
+  letter-spacing: 1px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+main section .group-button
+{
+  margin-top: 40px ;
+}
+main section .group-button .botao1
+{
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid #eceee9;
+  background-color: transparent;
+  text-align: center;
+  color: #c7c7c7;
+  margin-right: 10px;
+  letter-spacing: 1px;
+  transition: all 0.4s ease-in;
+}
+main section .group-button .botao1:hover
+{
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+
+main section .group-button .botao2
+{
+   width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid #f43813;
+  background-color: #f43813;
+  color: #ffac86;
+  text-align: center;
+  margin-left: 10px;
+  letter-spacing: 1px;
+  transition: all 0.4s ease-in;
+
+}
+main section .group-button .botao2:hover
+{
+  cursor: pointer;
+  background-color: #991f07;
+}
+
+main section .iconis
+{
+  width: 310px;
+  margin-top: 140px;
+  display: flex;
+  justify-content: space-around;
+}
+main section .iconis-item
+{
+  width: 75px;
+  height: 60px;
+  background-color: #373739;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s ease-out;
+}
+
+main section .iconis-item:nth-child(1)
+{
+    background-color:#0f0f0f ;
+}
+main section .iconis .iconis-item a
+
+{
+  width: 100%;
+  height: 40px;
+ display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+main section .iconis .iconis-item .fa
+{
+  color: #dede;
+}
+ .iconis .iconis-item small
+ {
+   color: #979797;
+   cursor: pointer;
+ }
+
+ .iconis .iconis-item:hover
+ {
+  text-shadow: 0 0 15px #979797;
+    background-color:#0f0f0f ;
+ }
+footer
+{
+  background-color: #fff;
+  font-family: 'Raleway', sans-serif ;
+}
+footer .icon-text
+{
+  width: 600px;
+  margin-top: 80px;
+  display: grid;
+  align-content: center;
+  grid-template-areas: '... iconi ... titulo';
+  grid-template-columns:1fr 0.2fr auto 2fr;
+  grid-auto-flow: column;
+}
+footer .icon-text .fa
+{
+  grid-area: iconi;
+  line-height: 60px;
+  color: #979797;
+}
+footer .icon-text .text
+{
+  position: relative;
+  grid-area: titulo;
+  display: flex;
+  flex-direction: column;
+}
+footer .icon-text .text::before
+{
+  position: absolute;
+  top: 4px;
+  left: -10px;
+  content: '';
+  display: block;
+  height: 50px;
+  width: 2px;
+  background-color: #ebebeb;
+}
+
+footer .icon-text h2
+{
+  color: #2f2f2f;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+footer .icon-text p
+{
+  color: #787878;
+  font-size: smaller;
+  text-transform: capitalize;
+}
+footer .gallery
+{
+  margin-top: 50px;
+}
+
+.figure-caption
+{
+  color: #4b4b4b;
+  line-height: 30px;
+} 
+footer .minions
+{
+  display: flex;
+  justify-content: space-around;
+}
+footer .minions small
+{
+  font-size: 12px;
+  color: #9b9b9b;
+}
